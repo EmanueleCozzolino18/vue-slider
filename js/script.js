@@ -1,6 +1,6 @@
 const slides = [
-{
-    image: 'img/01.webp',
+    {
+        image: 'img/01.webp',
         title: 'Marvel\'s Spiderman Miles Morale',
         text: 'Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.',
     }, {
@@ -23,3 +23,19 @@ const slides = [
 ];
 
 console.log(slides);
+
+
+// CREATA MY APP IN VUE
+const { createApp } = Vue
+
+const myThumb = ({
+    data() {
+        return {
+            message: 'test'
+        }
+    }
+})
+
+const thumbs = createApp(myThumb);
+
+thumbs.mount('#thumbs');
